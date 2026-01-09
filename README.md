@@ -1,38 +1,33 @@
-Role Name
-=========
+# install_etcdctl
 
-A brief description of the role goes here.
+Installs etcdctl
 
-Requirements
-------------
+## Requirements
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+None.
 
-Role Variables
---------------
+## Role Variables
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+```yaml
+install_etcdctl_version: "v3.6.7" # version of etcd to install
 
-Dependencies
-------------
+install_etcdctl_url: "https://github.com/etcd-io/etcd/releases/download/{{ install_etcdctl_version }}/etcd-{{ install_etcdctl_version }}-linux-{{ install_etcdctl_arch }}.tar.gz" # url from where to download the etcd files
+install_etcdctl_path: "/usr/local/bin/etcdctl" # absolute path where to put etcdctl
+install_etcdctl_force_update: false # flag to control if etcdctl should be updated regardless of version
+```
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+## Dependencies
 
-Example Playbook
-----------------
+None
+
+## Example Playbook
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
     - hosts: servers
       roles:
-         - { role: username.rolename, x: 42 }
+         - { role: wittdennis.install_etcdctl }
 
-License
--------
+## License
 
-BSD
-
-Author Information
-------------------
-
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+MIT

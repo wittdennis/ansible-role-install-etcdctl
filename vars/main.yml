@@ -1,2 +1,6 @@
 ---
-# vars file for role_remplate
+arch_map:
+  x86_64: "amd64"
+  aarch64: "arm64"
+
+install_etcdctl_arch: "{{ arch_map[ansible_facts['architecture']] | default(ansible_facts['architecture']) }}"

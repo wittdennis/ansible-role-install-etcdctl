@@ -1,3 +1,51 @@
 # code: language=ansible
 ---
-# tasks file for role_remplate
+- name: Get current etcdctl version # noqa: risky-shell-pipe
+  ansible.builtin.shell:
+    cmd: |
+      {{ install_etcdctl_path }} version
+  changed_when: false
+  failed_when: false
+  register: __etcdctl_version
+
+- name: Download etcd
+  when: not (install_etcdctl_version[1:] in __etcdctl_version.stdout) or install_etcdctl_force_update
+  ansible.builtin.get_url:
+    url: "{{ install_etcdctl_url }}"
+    dest: "/tmp/etcd-{{ install_etcdctl_version }}.tar.gz"
+    force: true
+    mode: "0644"
+  retries: 3
+  delay: 2
+  register: __etcd_download
+
+- name: Extract etcd # noqa: no-handler
+  when: __etcd_download.changed
+  ansible.builtin.unarchive:
+    src: "/tmp/etcd-{{ install_etcdctl_version }}.tar.gz"
+    dest: "/tmp"
+    mode: "0644"
+    remote_src: true
+  register: __etcd_extract
+
+- name: Copy etcdctl # noqa: no-handler
+  when: __etcd_extract.changed
+  ansible.builtin.copy:
+    remote_src: true
+    dest: "{{ install_etcdctl_path }}"
+    src: "/tmp/etcd-{{ install_etcdctl_version }}-linux-{{ install_etcdctl_arch }}/etcdctl"
+    mode: "0744"
+    owner: root
+    group: root
+
+- name: Cleanup
+  block:
+    - name: Remove extracted directory
+      ansible.builtin.file:
+        path: "/tmp/etcd-{{ install_etcdctl_version }}-linux-{{ install_etcdctl_arch }}"
+        state: absent
+
+    - name: Remove downloaded archive
+      ansible.builtin.file:
+        path: "/tmp/etcd-{{ install_etcdctl_version }}.tar.gz"
+        state: absent
