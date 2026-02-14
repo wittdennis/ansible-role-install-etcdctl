@@ -1,5 +1,5 @@
 ---
-install_etcdctl_version: "v3.6.7" # renovate: datasource=github-releases depName=etcd-io/etcd versioning=semver
+install_etcdctl_version: "v3.6.8" # renovate: datasource=github-releases depName=etcd-io/etcd versioning=semver
 
 install_etcdctl_url: "https://github.com/etcd-io/etcd/releases/download/{{ install_etcdctl_version }}/etcd-{{ install_etcdctl_version }}-linux-{{ install_etcdctl_arch }}.tar.gz" # noqa: yaml[line-length]
 install_etcdctl_path: "/usr/local/bin/etcdctl"
