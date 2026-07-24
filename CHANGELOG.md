@@ -2,6 +2,18 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [1.0.8](https://github.com/wittdennis/ansible-role-install-etcdctl/compare/51118d47740acb817f75ef398ccb9ce77b22ef28..1.0.8) - 2026-07-24
+#### Bug Fixes
+- (**deps**) update dependency etcd-io/etcd to v3.7.1 - ([3327981](https://github.com/wittdennis/ansible-role-install-etcdctl/commit/332798184fb1fffce1b1a6b9a2c8855389b883c5)) - wittdennis-renovate[bot]
+#### Continuous Integration
+- (**deps**) update wittdennis/pipelines action to v2.0.39 - ([185e5dc](https://github.com/wittdennis/ansible-role-install-etcdctl/commit/185e5dc6eb39bcca0509ddf5dc541b474c8598a3)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.38 - ([d2ace5d](https://github.com/wittdennis/ansible-role-install-etcdctl/commit/d2ace5d017fd56b4e683a632e842c39be8593516)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.37 - ([2668c5f](https://github.com/wittdennis/ansible-role-install-etcdctl/commit/2668c5f7d394a67ee59cf547ccee4aafa820ccad)) - wittdennis-renovate[bot]
+#### Miscellaneous Chores
+- (**deps**) update wittdennis/pipelines action to v2.0.36 - ([51118d4](https://github.com/wittdennis/ansible-role-install-etcdctl/commit/51118d47740acb817f75ef398ccb9ce77b22ef28)) - wittdennis-renovate[bot]
+
+- - -
+
 ## [1.0.7](https://github.com/wittdennis/ansible-role-install-etcdctl/compare/bcca2307b15bdf20950e7432f5a87e711030bbac..1.0.7) - 2026-07-09
 #### Bug Fixes
 - (**deps**) update dependency etcd-io/etcd to v3.7.0 - ([d786644](https://github.com/wittdennis/ansible-role-install-etcdctl/commit/d786644649313f63e5d4306bbc2c545d3e7fad8a)) - wittdennis-renovate[bot]
