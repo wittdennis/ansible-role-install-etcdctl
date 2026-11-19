@@ -2,6 +2,22 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [1.0.11](https://github.com/wittdennis/ansible-role-install-etcdctl/compare/e700854318eaad8cf13e3a55a422ecfa69f516cb..1.0.11) - 2026-11-19
+#### Bug Fixes
+- (**deps**) update dependency etcd-io/etcd to v3.7.4 - ([c7bb021](https://github.com/wittdennis/ansible-role-install-etcdctl/commit/c7bb0211da0dfe84cf282e41d249e86fdd002581)) - wittdennis-renovate[bot]
+#### Continuous Integration
+- (**deps**) update wittdennis/pipelines action to v2.0.75 - ([cc86bdc](https://github.com/wittdennis/ansible-role-install-etcdctl/commit/cc86bdc880f32a4bf2f27fe5c5b1a483e86f5d3f)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.74 - ([90153af](https://github.com/wittdennis/ansible-role-install-etcdctl/commit/90153af54cd414f3ee0d4ff8b7c565c5d497e071)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.73 - ([8d8682a](https://github.com/wittdennis/ansible-role-install-etcdctl/commit/8d8682a914e35bef43d7534faed5bcc7114fa262)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.72 - ([da2913e](https://github.com/wittdennis/ansible-role-install-etcdctl/commit/da2913ebe78565e693c5a64cf8cb334d854789ae)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.71 - ([a40b3db](https://github.com/wittdennis/ansible-role-install-etcdctl/commit/a40b3db26ec5a315656d971bfc01411486b50bcf)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.70 - ([13720cb](https://github.com/wittdennis/ansible-role-install-etcdctl/commit/13720cb23c488e32733a1a482562f7a3f4c1a458)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.69 - ([e700854](https://github.com/wittdennis/ansible-role-install-etcdctl/commit/e700854318eaad8cf13e3a55a422ecfa69f516cb)) - wittdennis-renovate[bot]
+#### Miscellaneous Chores
+- (**deps**) update pre-commit hook ansible-community/ansible-lint to v26.11.0 - ([a34c662](https://github.com/wittdennis/ansible-role-install-etcdctl/commit/a34c662c16dfcff73388f1aa10c5f7955dc5d430)) - wittdennis-renovate[bot]
+
+- - -
+
 ## [1.0.10](https://github.com/wittdennis/ansible-role-install-etcdctl/compare/8bd1c251ab2d93a44fafcb06e9a2d67c7fc6b73c..1.0.10) - 2026-10-23
 #### Bug Fixes
 - (**deps**) update dependency etcd-io/etcd to v3.7.3 - ([9c4ebd9](https://github.com/wittdennis/ansible-role-install-etcdctl/commit/9c4ebd97ce834b6deb5df767dd6a62f0ce77c235)) - wittdennis-renovate[bot]
